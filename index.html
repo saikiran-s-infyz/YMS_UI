@@ -6,26 +6,7 @@
     <title>YMS</title>
     <link rel="icon" href="./infyz_logo.webp" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      
-        .animate-marquee {
-          display: flex;
-          animation: marquee 10s linear infinite;
-        }
-
-        .logo-image{
-            height: 100px;
-            /* width: 800px; */
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="main-container">
@@ -92,8 +73,8 @@
               </div>
               <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                  <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Announcing our next AI Feature... <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                  <div class="cursor-pointer relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    Announcing our next AI Feature... <a href="#" class="font-semibold text-indigo-600"><span class="cursor-pointer absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                   </div>
                 </div>
                 <div class="text-center">
@@ -218,72 +199,81 @@
               <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           
                 <!-- First Container -->
-                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                  <div class="absolute inset-px rounded-lg bg-white"></div>
+                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg card-container">
+                  
+                  <div class="absolute inset-px rounded-lg bg-white">
+                    
+                  </div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Cargo Planning & Allocation</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Automate planning and slot allocation with AI for higher precision and efficiency. Optimize workflows from cargo intake to dispatch with predictive models and demand forecasting.</p>
+                    <img src="./agents/cargo_planning_&_allocation.jpg" alt="" class="card-image">
+                    <div class="px-8 pt-3 sm:px-10 sm:pt-10">
+                      <p class="mt-0 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Cargo Planning & Allocation</p>
+                      <p class="mt-0 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Automate planning and slot allocation with AI for higher precision and efficiency. Optimize workflows from cargo intake to dispatch with predictive models and demand forecasting.</p>
                     </div>
                   </div>
                   <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
                 </div>
           
                 <!-- Second Container -->
-                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg card-container">
                   <div class="absolute inset-px rounded-lg bg-white"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Yard Monitoring</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Stay up-to-date with real-time container yard information, including container counts, yard utilization, and area-wise capacity. This helps you monitor operations and make informed logistics decisions.</p>
+                    <img src="./agents/yard_monitoring.jpg" alt="" class="card-image">
+                    <div class="px-8 pt-3 sm:px-10 sm:pt-10">
+                      <p class="mt-0 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Yard Monitoring</p>
+                      <p class="mt- max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Stay up-to-date with real-time container yard information, including container counts, yard utilization, and area-wise capacity. This helps you monitor operations and make informed logistics decisions.</p>
                     </div>
                   </div>
                   <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
                 </div>
           
                 <!-- Third Container -->
-                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg card-container">
                   <div class="absolute inset-px rounded-lg bg-white"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">AI-Based Yard Recommendations</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Let AI guide your container placements with context-aware recommendations. Factors like cargo type, destination, and dwell time are analyzed to suggest the most efficient storage spots.</p>
+                    <img src="./agents/yard recommendations.jpg" alt="" class="card-image">
+                    <div class="px-8 pt-3 sm:px-10 sm:pt-10">
+                      <p class="mt-0 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">AI-Based Yard Recommendations</p>
+                      <p class="mt-0 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Let AI guide your container placements with context-aware recommendations. Factors like cargo type, destination, and dwell time are analyzed to suggest the most efficient storage spots.</p>
                     </div>
                   </div>
                   <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
                 </div>
           
                 <!-- Fourth Container -->
-                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg card-container">
                   <div class="absolute inset-px rounded-lg bg-white"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Cargo Slot Gate-In</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Manage and track the gate-in process with ease. Get insights on scheduled arrivals, real-time check-ins, and reduce bottlenecks at entry points using automated slot allocation.</p>
+                    <img src="./agents/cargo_gate_in.jpg" alt="" class="card-image">
+                    <div class="px-8 pt-3 sm:px-10 sm:pt-10">
+                      <p class="mt-0 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Cargo Slot Gate-In</p>
+                      <p class="mt-0 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Manage and track the gate-in process with ease. Get insights on scheduled arrivals, real-time check-ins, and reduce bottlenecks at entry points using automated slot allocation.</p>
                     </div>
                   </div>
                   <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
                 </div>
           
                 <!-- Fifth Container -->
-                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg card-container">
                   <div class="absolute inset-px rounded-lg bg-white"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">AI Navigation Within Port</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Navigate complex yard layouts with AI-assisted routing. Real-time traffic, container location, and gate priorities are considered to guide drivers efficiently across the terminal.</p>
+                    <img src="./agents/ai_port_navigation.jpg" alt="" class="card-image">
+                    <div class="px-8 pt-3 sm:px-10 sm:pt-10">
+                      <p class="mt-0 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">AI Navigation Within Port</p>
+                      <p class="mt-0 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Navigate complex yard layouts with AI-assisted routing. Real-time traffic, container location, and gate priorities are considered to guide drivers efficiently across the terminal.</p>
                     </div>
                   </div>
                   <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
                 </div>
           
                 <!-- Sixth Container -->
-                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div class="cursor-pointer relative transform transition-all duration-300 hover:scale-105 hover:shadow-lg card-container">
                   <div class="absolute inset-px rounded-lg bg-white"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                    <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">AI-Driven Cargo Reallocation</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Use AI algorithms to reallocate containers based on yard load, cargo priority, and space optimization. Minimize congestion and improve turnaround time with smart repositioning.</p>
+                    <img src="./agents/cargo_planning_&_allocation.jpg" alt="" class="card-image">
+                    <div class="px-8 pt-3 sm:px-10 sm:pt-10">
+                      <p class="mt-0 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">AI-Driven Cargo Reallocation</p>
+                      <p class="mt-0 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Use AI algorithms to reallocate containers based on yard load, cargo priority, and space optimization. Minimize congestion and improve turnaround time with smart repositioning.</p>
                     </div>
                   </div>
                   <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5"></div>
@@ -470,7 +460,7 @@
                 </div>
               </div>
               <div class="mt-10">
-                <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+                <button type="submit" class="cursor-pointer block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
               </div>
             </form>
         </div>
@@ -521,7 +511,7 @@
                     />
           
                     <button
-                      class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
+                      class="cursor-pointer absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
                     >
                       Subscribe
                     </button>
